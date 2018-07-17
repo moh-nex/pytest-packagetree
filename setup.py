@@ -16,7 +16,7 @@ setup(
     license='MIT',
     url='https://github.com/jsfehler/pytest-packagetree',
     description='Pytest plugin or package-tree',
-    py_modules=['pytest_packagetree', 'hooks'],
+    packages=['pytest_packagetree'],
     install_requires=['pytest>=3.5.0', 'package-tree'],
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -31,7 +31,7 @@ setup(
     ],
     entry_points={
         'pytest11': [
-            'packagetree = pytest_packagetree',
+            'packagetree = pytest_packagetree.plugin',
         ],
     },
 )
