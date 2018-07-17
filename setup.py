@@ -31,7 +31,7 @@ setup(
     ],
     entry_points={
         'pytest11': [
-            'splinter_stere = pytest_packagetree',
+            'packagetree = pytest_packagetree',
         ],
     },
 )
