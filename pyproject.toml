@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-packagetree"
+version = "0.0.1"
+authors = [
+    { name="Joshua Fehler", email="jsfehler@gmail.com" }
+]
+maintainers = [
+    { name="Joshua Fehler", email="jsfehler@gmail.com" }
+]
+license = { text = "MIT" }
+description = "Pytest plugin or package-tree"
+dependencies = ["pytest>=3.5.0", "package-tree"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.entry-points."pytest11"]
+packagetree = "pytest_packagetree.plugin"
